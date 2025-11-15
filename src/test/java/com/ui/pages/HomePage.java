@@ -12,6 +12,7 @@ import com.utility.JSONUtility;
 import com.utility.LoggerUtlity;
 
 public final class HomePage extends BrowserUtility {
+	
 	Logger logger = LoggerUtlity.getLogger(this.getClass());
 
 	private static final By SIGN_IN_LINK_LOCATOR = By.xpath("//a[contains(text(),\"Sign\")]");

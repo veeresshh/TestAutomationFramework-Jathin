@@ -14,6 +14,8 @@ public class LoginTest extends TestBase {
 
 	Logger logger = LoggerUtlity.getLogger(this.getClass());
 
+	
+	
 	@Test(description = "Verifies with the valid user is able to login into the application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestDataProvider")
 	public void loginTest(User user) {
@@ -22,6 +24,9 @@ public class LoginTest extends TestBase {
 				"Jatin Sharma");
 	}
 
+	
+	
+	
 	@Test(description = "Verifies with the valid user is able to login into the application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestCSVDataProvider")
 	public void loginCSVTest(User user) {
@@ -30,6 +35,9 @@ public class LoginTest extends TestBase {
 				"Jatin Sharma");
 	}
 
+	
+	
+	
 	@Test(description = "Verifies with the valid user is able to login into the application", groups = { "e2e",
 			"sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
 	public void loginExcelTest(User user) {

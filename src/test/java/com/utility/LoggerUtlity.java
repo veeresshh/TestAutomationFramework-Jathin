@@ -5,11 +5,16 @@ import org.apache.logging.log4j.Logger;
 
 public class LoggerUtlity {
 
+	// In Singleton Class Constructor is always Private - Interview
+	
 	private LoggerUtlity() {
+		
 	}
 
 	public static Logger getLogger(Class<?> clazz) {
+		
 		Logger logger = null;
+		
 		if (logger == null) {
 			logger = LogManager.getLogger(clazz);
 		}

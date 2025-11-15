@@ -267,6 +267,7 @@ public class BrowserUtility {
 	}
 
 	public String takeScreenShot(String name) {
+		
 		TakesScreenshot screenshot = (TakesScreenshot) driver.get();
 
 		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
@@ -275,10 +276,10 @@ public class BrowserUtility {
 		String timeStamp = format.format(date);
 		String path = "./screenshots/" + name + " - " + timeStamp + ".png";
 		File screenshotFile = new File(path);
+		
 		try {
 			FileUtils.copyFile(screenshotData, screenshotFile);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
