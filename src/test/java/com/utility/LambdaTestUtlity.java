@@ -24,6 +24,8 @@ public class LambdaTestUtlity {
         ltOptions.put("platformName", "Windows 11");
         ltOptions.put("project", "Selenium 4");
         ltOptions.put("build", "Build 1");
+        ltOptions.put("video", true);
+        ltOptions.put("visual", true);
         ltOptions.put("name", testName);
         ltOptions.put("w3c", true);
 		ltOptions.put("selenium_version", "4.38.0");
