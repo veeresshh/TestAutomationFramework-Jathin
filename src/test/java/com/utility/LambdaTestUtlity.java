@@ -19,15 +19,18 @@ public class LambdaTestUtlity {
 		capabilities.setCapability("browserName", browser);
 		capabilities.setCapability("browserVersion", "143");
 		Map<String, Object> ltOptions = new HashMap();
-		ltOptions.put("user", "veeresh0270");
-		ltOptions.put("accessKey", "LT_702AA77ZpY7i6l4Uvhz9DKyUR44czpyjhn1mnzdNBlSL1Tu");
-		ltOptions.put("build", "Selenium 4");
-		ltOptions.put("name", testName);
-		ltOptions.put("platformName", "Windows 11");
-		ltOptions.put("seCdp", true);
+		ltOptions.put("username", "veeresh0270");
+        ltOptions.put("accessKey", "LT_702AA77ZpY7i6l4Uvhz9DKyUR44czpyjhn1mnzdNBlSL1Tu");
+        ltOptions.put("platformName", "Windows 11");
+        ltOptions.put("project", "Selenium 4");
+        ltOptions.put("build", "Build 1");
+        ltOptions.put("name", testName);
+        ltOptions.put("w3c", true);
 		ltOptions.put("selenium_version", "4.38.0");
 		capabilities.setCapability("LT:Options", ltOptions);
 		capabilitiesLocal.set(capabilities);
+		
+		
 		WebDriver driver = null;
 		try {
 			driver = new RemoteWebDriver(new URL(HUB_URL), capabilitiesLocal.get());
