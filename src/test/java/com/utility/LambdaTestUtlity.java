@@ -17,21 +17,21 @@ public class LambdaTestUtlity {
 	public static WebDriver intializeLambdaTestSession(String browser, String testName) {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", browser);
-		capabilities.setCapability("browserVersion", "143");
+		capabilities.setCapability("browserVersion", "latest");
 		Map<String, Object> ltOptions = new HashMap();
-		ltOptions.put("LT_USERNAME", "veeresh0270");
-        ltOptions.put("LT_ACCESS_KEY", "LT_702AA77ZpY7i6l4Uvhz9DKyUR44czpyjhn1mnzdNBlSL1Tu");
-        ltOptions.put("platformName", "Windows 11");
-        ltOptions.put("project", "Selenium 4");
-        ltOptions.put("build", "Build 1");
-        ltOptions.put("video", true);
-        ltOptions.put("visual", true);
-        ltOptions.put("name", testName);
-        ltOptions.put("w3c", true);
-		ltOptions.put("selenium_version", "4.38.0");
-		capabilities.setCapability("LT:Options", ltOptions);
-		capabilitiesLocal.set(capabilities);
-		
+		 ltOptions.put("username", "veeresh0270");
+	        ltOptions.put("accessKey", "LT_702AA77ZpY7i6l4Uvhz9DKyUR44czpyjhn1mnzdNBlSL1Tu");
+	        ltOptions.put("project", "Selenium 4");
+	        ltOptions.put("build", "Test Automation Suite");
+	        ltOptions.put("video", true);
+	        ltOptions.put("visual", true);
+	        ltOptions.put("name", testName);
+	        ltOptions.put("w3c", true);
+	        ltOptions.put("selenium_version", "4.38.0");
+
+	        capabilities.setCapability("LT:Options", ltOptions);
+
+	        capabilitiesLocal.set(capabilities);
 		
 		WebDriver driver = null;
 		try {
