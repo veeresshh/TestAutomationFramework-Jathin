@@ -17,15 +17,15 @@ public class LambdaTestUtlity {
 	public static WebDriver intializeLambdaTestSession(String browser, String testName) {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", browser);
-		capabilities.setCapability("browserVersion", "127");
+		capabilities.setCapability("browserVersion", "latest");
 		Map<String, Object> ltOptions = new HashMap();
-		ltOptions.put("user", "jatintestautomationacademy");
-		ltOptions.put("accessKey", "zevQUy7S5LsXbkclaq4TvMbKDdCMFN7AeoNGvaaelLULXHPlJe");
+		ltOptions.put("user", "veeresh0270");
+		ltOptions.put("accessKey", "LT_702AA77ZpY7i6l4Uvhz9DKyUR44czpyjhn1mnzdNBlSL1Tu");
 		ltOptions.put("build", "Selenium 4");
 		ltOptions.put("name", testName);
-		ltOptions.put("platformName", "Windows 10");
+		ltOptions.put("platformName", "Windows 11");
 		ltOptions.put("seCdp", true);
-		ltOptions.put("selenium_version", "4.23.0");
+		ltOptions.put("selenium_version", "4.38.0");
 		capabilities.setCapability("LT:Options", ltOptions);
 		capabilitiesLocal.set(capabilities);
 		WebDriver driver = null;

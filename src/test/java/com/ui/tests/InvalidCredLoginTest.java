@@ -11,11 +11,14 @@ import com.utility.LoggerUtlity;
 
 @Listeners({ com.ui.listeners.TestListener.class })
 public class InvalidCredLoginTest extends TestBase {
-
-	Logger logger = LoggerUtlity.getLogger(this.getClass());
+	
 	private static final String INVALID_EMAIL_ADDRESS = "jatinvsharma@gmail.com";
 	private static final String INVALID_PASSWORD = "Qwerty1234!";
 
+
+	Logger logger = LoggerUtlity.getLogger(this.getClass());
+	
+	
 	@Test(description = "Verify if the proper error message is shown for the user when they enter invalid credentials ", groups = {
 			"e2e", "sanity", "smoke" })
 	public void loginTest() {

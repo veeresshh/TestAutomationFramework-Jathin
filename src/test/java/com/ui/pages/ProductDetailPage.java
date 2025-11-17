@@ -13,7 +13,7 @@ public class ProductDetailPage extends BrowserUtility {
 
 	public ProductDetailPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+
 	}
 
 	public ProductDetailPage changeSize(Size size) {
@@ -21,12 +21,14 @@ public class ProductDetailPage extends BrowserUtility {
 		return new ProductDetailPage(getDriver());
 	}
 
+	
 	public ProductDetailPage addProductToCart() {
 		clickOn(ADD_TO_CART_BUTTON_LOCATOR);
 		return new ProductDetailPage(getDriver());
 
 	}
 
+	
 	public ShoppingCartPage proceedToCheckout() {
 
 		clickOn(PROCEED_TO_CHECKOUT_BUTTON_LOCATOR);

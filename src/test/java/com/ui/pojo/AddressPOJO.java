@@ -15,6 +15,7 @@ public class AddressPOJO {
 
 	public AddressPOJO(String company, String addressLine1, String addressLine2, String city, String postCode,
 			String homePhoneNumber, String mobileNumber, String otherInformation, String addressAlias, String state) {
+		
 		super();
 		this.company = company;
 		this.addressLine1 = addressLine1;

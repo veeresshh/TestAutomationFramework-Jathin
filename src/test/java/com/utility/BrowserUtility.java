@@ -208,8 +208,11 @@ public class BrowserUtility {
 
 	public void selectFromDropDown(By dropDownLocator, String optionToSelect) {
 		logger.info("Finding Element with the locator" + dropDownLocator);
+		
 		WebElement element = driver.get().findElement(dropDownLocator);
+		
 		Select select = new Select(element);
+		
 		logger.info("Selecting the Option " + optionToSelect);
 
 		select.selectByVisibleText(optionToSelect);

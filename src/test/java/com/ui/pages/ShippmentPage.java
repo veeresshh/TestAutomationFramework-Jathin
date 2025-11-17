@@ -13,11 +13,12 @@ public class ShippmentPage extends BrowserUtility{
 	
 	public ShippmentPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	
 	public PaymentPage goToPaymentPage() {
+		
 		clickOn(ACCEPT_TERMS_CHECKBOX_LOCATOR);
 		clickOn(PROCEED_TO_CHECKOUT_BUTTON_LOCATOR);
 		return new PaymentPage(getDriver());

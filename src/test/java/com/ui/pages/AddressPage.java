@@ -23,10 +23,11 @@ public class AddressPage extends BrowserUtility {
 
 	public AddressPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	public String saveAddress(AddressPOJO addressPOJO) {
+		
 		enterText(COMPANY_TEXTBOX_LOCATOR, addressPOJO.getCompany());
 		enterText(ADDRESS1_TEXTBOX_LOCATOR, addressPOJO.getAddressLine1());
 		enterText(ADDRESS2_TEXTBOX_LOCATOR, addressPOJO.getAddressLine2());
@@ -39,7 +40,9 @@ public class AddressPage extends BrowserUtility {
 		enterText(ADDRESS_ALIAS_TEXTBOX_LOCATOR, addressPOJO.getAddressAlias());
 		selectFromDropDown(STATE_DROPDOWN_LOCATOR, addressPOJO.getState());
 		clickOn(SAVE_ADDRESS_BUTTON_LOCATOR);
+		
 		String newAddress = getVisibleText(ADDRESS_HEADING);
+		
 		return newAddress;
 	}
 
