@@ -17,7 +17,7 @@ public class LambdaTestUtlity {
 	public static WebDriver intializeLambdaTestSession(String browser, String testName) {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("browserName", browser);
-		capabilities.setCapability("browserVersion", "latest");
+		capabilities.setCapability("browserVersion", "144");
 		Map<String, Object> ltOptions = new HashMap();
 		ltOptions.put("user", "veeresh0270");
 		ltOptions.put("accessKey", "LT_702AA77ZpY7i6l4Uvhz9DKyUR44czpyjhn1mnzdNBlSL1Tu");
